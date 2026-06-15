@@ -1,0 +1,1233 @@
+<!doctype html>
+
+<html dir="rtl" lang="ar" style="">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bright Way - أفضل موقع للتأمين في مصر</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181b24",
+              "inverse-surface": "#2f3133",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#434751",
+              error: "#ba1a1a",
+              outline: "#767685",
+              "on-background": "#1a1c1e",
+              "on-secondary-fixed-variant": "#5e4200",
+              "surface-container": "#eeeef0",
+              "on-tertiary-container": "#eaecf9",
+              "primary-fixed-dim": "#bec2ff",
+              tertiary: "#4f535d",
+              "surface-bright": "#f9f9fc",
+              "secondary-container": "#feb700",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e8e8ea",
+              "tertiary-fixed": "#e0e2ef",
+              "surface-dim": "#dadadc",
+              "tertiary-container": "#686b76",
+              "on-error": "#ffffff",
+              secondary: "#7c5800",
+              "on-primary-container": "#ecebff",
+              primary: "#3741c3",
+              "on-error-container": "#93000a",
+              "on-surface": "#1a1c1e",
+              surface: "#f9f9fc",
+              "surface-tint": "#444ed0",
+              "on-secondary-container": "#6b4b00",
+              "surface-container-highest": "#e2e2e5",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#454654",
+              "tertiary-fixed-dim": "#c3c6d2",
+              "primary-fixed": "#e0e0ff",
+              "primary-container": "#515cdd",
+              "on-primary": "#ffffff",
+              background: "#f9f9fc",
+              "surface-container-low": "#f3f3f6",
+              "inverse-primary": "#bec2ff",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e2e2e5",
+              "on-primary-fixed-variant": "#2833b7",
+              "on-primary-fixed": "#00046a",
+              "on-secondary-fixed": "#271900",
+              "inverse-on-surface": "#f0f0f3",
+              "secondary-fixed": "#ffdea8",
+              "outline-variant": "#c6c5d6",
+              "secondary-fixed-dim": "#ffba20",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+              "2xl": "1rem",
+              "3xl": "1.5rem",
+            },
+            spacing: {
+              base: "4px",
+              "margin-mobile": "16px",
+              "margin-desktop": "64px",
+              md: "16px",
+              lg: "24px",
+              sm: "8px",
+              xs: "4px",
+              gutter: "24px",
+              xl: "40px",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              "label-md": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              display: ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "24px",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              display: [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "28px",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #f9f9fc;
+        color: #1a1c1e;
+      }
+      @keyframes scroll-rtl {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(50%);
+        }
+      }
+      .animate-scroll-rtl {
+        animation: scroll-rtl 30s linear infinite;
+      }
+
+      /* Review Section Animations */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes bg-pan {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .animate-bg-pan {
+        background-size: 200% 200%;
+        animation: bg-pan 15s ease infinite;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Top Navigation -->
+    <nav
+      class="bg-surface/90 backdrop-blur-md dark:bg-surface border-b border-outline-variant/30 dark:border-outline/20 sticky top-0 z-50 w-full shadow-sm"
+    >
+      <div
+        class="flex flex-row-reverse justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+      >
+        <!-- Brand -->
+        <a
+          class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-2 flex-row-reverse"
+          href="#"
+        >
+          <!-- <span
+            class="material-symbols-outlined text-secondary-container"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >security</span
+          >
+          Bright Way -->
+          <img
+            alt=""
+            src="./logo-Header.webp"
+            width="500"
+            height="124"
+            class="h-10 w-auto md:h-11 bg-red"
+            style="
+              filter: brightness(0) saturate() invert(19%) sepia(42%)
+                saturate(1200%) hue-rotate(186deg) brightness(95%) contrast(92%);
+            "
+          />
+        </a>
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden md:flex flex-row-reverse items-center gap-8">
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+            href="#"
+            >عن أمان ليك</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+            href="#"
+            >تأمين طبي</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+            href="#"
+            >تأمين سيارات</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+            href="#"
+            >الأخبار</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md"
+            href="#"
+            >إتصل بنا</a
+          >
+        </div>
+        <!-- Actions -->
+        <div class="flex flex-row-reverse items-center gap-4">
+          <button
+            class="text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-all p-2 rounded-full scale-95 active:opacity-80 flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined">language</span>
+          </button>
+          <button
+            class="md:hidden text-on-surface-variant p-2 hover:text-primary transition-colors"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative pt-20 pb-32 px-margin-mobile md:px-margin-desktop overflow-hidden"
+      >
+        <div
+          class="max-w-container-max mx-auto flex flex-col items-center text-center relative z-10"
+        >
+          <div
+            class="inline-block px-4 py-2 bg-secondary-container/20 border border-secondary-container text-secondary font-label-sm text-label-sm rounded-full mb-6 font-bold shadow-sm"
+          >
+            ✨ أفضل منصة تأمين في مصر
+          </div>
+          <h1
+            class="font-display text-headline-lg-mobile md:text-display text-on-surface mb-6 max-w-3xl leading-tight font-extrabold drop-shadow-sm"
+          >
+            أهلا بيك في أكبر موقع للتأمين في مصر
+          </h1>
+          <h2
+            class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-8 relative inline-block"
+          >
+            أضمن - أسهل - أوفر
+            <svg
+              class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-48 h-3 text-secondary-container opacity-50"
+              preserveaspectratio="none"
+              viewbox="0 0 100 10"
+            >
+              <path
+                d="M0 5 Q 50 10 100 5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="4"
+              ></path>
+            </svg>
+          </h2>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-14 text-lg"
+          >
+            قارن أفضل العروض واختار اللي يناسبك بكل ثقة من اكبر شركات التامين مع
+            أمان ليك أول منصة تأمين إلكترونية في مصر
+          </p>
+          <!-- CTA Cards -->
+          <div
+            class="flex flex-col sm:flex-row-reverse gap-8 w-full max-w-3xl justify-center mb-20 relative"
+          >
+            <!-- Medical CTA -->
+            <a
+              class="bg-primary-container text-on-primary hover:opacity-95 hover:-translate-y-1 transition-all duration-300 p-8 flex flex-row-reverse items-center justify-between shadow-lg hover:shadow-2xl group w-full sm:w-1/2 rounded-[2rem] border-2 border-transparent hover:border-secondary-container relative overflow-hidden"
+              href="#"
+            >
+              <div
+                class="flex flex-row-reverse items-center gap-4 relative z-10"
+              >
+                <div class="bg-white/20 p-3 rounded-2xl">
+                  <span
+                    class="material-symbols-outlined text-4xl"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >medical_services</span
+                  >
+                </div>
+                <span class="font-headline-md text-headline-md"
+                  >التأمين الطبي</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined group-hover:-translate-x-2 transition-transform duration-300 rtl:rotate-180 bg-white/20 p-2 rounded-full relative z-10"
+                >arrow_forward</span
+              >
+            </a>
+            <!-- Car CTA -->
+            <a
+              class="bg-surface-container-lowest border-2 border-outline-variant/30 hover:border-secondary-container hover:-translate-y-1 transition-all duration-300 p-8 flex flex-row-reverse items-center justify-between shadow-lg hover:shadow-2xl group w-full sm:w-1/2 rounded-[2rem] relative overflow-hidden"
+              href="#"
+            >
+              <div
+                class="flex flex-row-reverse items-center gap-4 text-on-surface relative z-10"
+              >
+                <div class="bg-primary/10 p-3 rounded-2xl text-primary">
+                  <span
+                    class="material-symbols-outlined text-4xl"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >directions_car</span
+                  >
+                </div>
+                <span class="font-headline-md text-headline-md"
+                  >تأمين السيارات</span
+                >
+              </div>
+              <span
+                class="material-symbols-outlined text-primary group-hover:-translate-x-2 transition-transform duration-300 rtl:rotate-180 bg-primary/10 p-2 rounded-full relative z-10"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+          <!-- Hero Image -->
+          <div
+            class="w-full max-w-5xl h-64 md:h-[500px] bg-surface-container rounded-[2.5rem] overflow-visible relative shadow-2xl border-8 border-white group"
+          >
+            <div class="w-full h-full rounded-[2rem] overflow-hidden relative">
+              <img
+                alt="Hero Illustration"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida/AP1WRLvl5DHzdShQWZVGzm623D2WQU_wsswxH092MzFd8IBO9U4szhvjDn1AIKRIRnrP1qQdd04_yik1jJVkMVJYCd9iHGfT9PPT_2ZK9_pucOQPj2M0_MHwxPTWFblY3EGhMdsbtqMosMFvSgv_5t2-1-J-lVa33gYpKLTFvNDf7dxl1sHnTLSaRDvOaqP_JQMAnFEL3sWuGaZUcPYf6IaxlHPiT2Ma35xKXnNHSBvYilfHkz7cY43x6zirlCw2"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
+            </div>
+            <!-- Decorative Badge on Image -->
+            <div
+              class="absolute bottom-6 right-6 bg-white/90 backdrop-blur px-6 py-3 rounded-2xl shadow-lg flex items-center gap-3 animate-float border border-secondary-container/30 z-10"
+            >
+              <span
+                class="material-symbols-outlined text-secondary-container text-3xl"
+                >verified</span
+              >
+              <span
+                class="font-label-md text-label-md font-bold text-on-surface"
+                >موثوق من آلاف المصريين</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it works -->
+      <section
+        class="py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden"
+      >
+        <div class="max-w-container-max mx-auto text-center relative z-10">
+          <div
+            class="inline-block px-4 py-1.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full mb-4 font-bold tracking-wide"
+          >
+            طريقة العمل
+          </div>
+          <h2
+            class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-2"
+          >
+            اشتري تأمينك
+          </h2>
+          <h3
+            class="font-display text-headline-lg-mobile md:text-display text-primary mb-24 relative inline-block"
+          >
+            في خطوات بسيطة
+            <svg
+              class="absolute -bottom-4 right-0 w-full h-4 text-secondary-container/40"
+              preserveaspectratio="none"
+              viewbox="0 0 100 10"
+            >
+              <path
+                d="M0 5 Q 50 10 100 5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="8"
+              ></path>
+            </svg>
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 relative"
+          >
+            <!-- Connecting line for desktop -->
+            <div
+              class="hidden md:block absolute top-12 left-[15%] right-[15%] h-1 bg-gradient-to-r from-primary/10 via-secondary-container to-primary/10 z-0 rounded-full"
+            ></div>
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center relative z-10 group">
+              <div
+                class="w-24 h-24 rounded-[2rem] bg-surface-container-lowest border-4 border-secondary-container text-primary flex items-center justify-center font-display text-headline-lg mb-8 shadow-xl group-hover:-translate-y-2 transition-all duration-300 relative"
+              >
+                <span
+                  class="absolute inset-0 bg-secondary-container/10 rounded-[1.75rem] group-hover:scale-110 transition-transform duration-300"
+                ></span>
+                ١
+              </div>
+              <h4
+                class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors"
+              >
+                املئ البيانات المطلوبة
+              </h4>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-xs"
+              >
+                أدخل تفاصيلك الأساسية بسرعة وسهولة وبسرية تامة.
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center relative z-10 group">
+              <div
+                class="w-24 h-24 rounded-[2rem] bg-primary text-on-primary border-4 border-white flex items-center justify-center font-display text-headline-lg mb-8 shadow-xl group-hover:-translate-y-2 transition-all duration-300 shadow-primary/30 relative"
+              >
+                <span
+                  class="absolute inset-0 bg-primary/20 rounded-[1.75rem] group-hover:scale-110 transition-transform duration-300 -z-10"
+                ></span>
+                ٢
+              </div>
+              <h4
+                class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors"
+              >
+                قارن أفضل العروض
+              </h4>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-xs"
+              >
+                استعرض الخيارات المتاحة من كبرى الشركات واقرأ التفاصيل بوضوح.
+              </p>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center relative z-10 group">
+              <div
+                class="w-24 h-24 rounded-[2rem] bg-surface-container-lowest border-4 border-secondary-container text-primary flex items-center justify-center font-display text-headline-lg mb-8 shadow-xl group-hover:-translate-y-2 transition-all duration-300 relative"
+              >
+                <span
+                  class="absolute inset-0 bg-secondary-container/10 rounded-[1.75rem] group-hover:scale-110 transition-transform duration-300"
+                ></span>
+                ٣
+              </div>
+              <h4
+                class="font-headline-md text-headline-md text-on-surface text-center mb-3 group-hover:text-primary transition-colors"
+              >
+                اشترك واستلم وانت في مكانك
+              </h4>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center"
+              >
+                أتمم الدفع بأمان واستلم وثيقتك إلكترونياً فوراً.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Us Section -->
+      <section
+        class="py-24 px-margin-mobile md:px-margin-desktop bg-surface relative"
+      >
+        <div class="max-w-container-max mx-auto">
+          <div
+            class="bg-primary-container/10 rounded-[2.5rem] p-8 md:p-16 shadow-2xl border-4 border-white relative overflow-hidden"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10"
+            >
+              <div class="text-right order-2 lg:order-1">
+                <h2
+                  class="font-display text-headline-lg-mobile md:text-display text-on-surface mb-4 font-bold"
+                >
+                  تأمين تقدر تثق فيه
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl"
+                >
+                  "برايت واي" هي شريكك الموثوق في رحلة التأمين. نحن نجمع بين
+                  الخبرة والابتكار لنقدم لك أفضل الحلول التأمينية التي تضمن راحة
+                  بالك ومستقبل عائلتك.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                  <div
+                    class="bg-surface-container-lowest p-6 rounded-3xl border border-primary/10 text-center shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-5xl mb-2"
+                      >groups</span
+                    >
+                    <div
+                      class="font-headline-md text-headline-md text-primary font-bold"
+                    >
+                      ٣٠٠+
+                    </div>
+                    <div
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                    >
+                      شركة موظفة
+                    </div>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-6 rounded-3xl border border-primary/10 text-center shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-5xl mb-2"
+                      >handshake</span
+                    >
+                    <div
+                      class="font-headline-md text-headline-md text-primary font-bold"
+                    >
+                      ١٨+
+                    </div>
+                    <div
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                    >
+                      شريك تأمين
+                    </div>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-6 rounded-3xl border border-primary/10 text-center shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-5xl mb-2"
+                      >map</span
+                    >
+                    <div
+                      class="font-headline-md text-headline-md text-primary font-bold"
+                    >
+                      ٢٠+
+                    </div>
+                    <div
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                    >
+                      محافظة مغطاة
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="inline-flex flex-row-reverse items-center gap-2 bg-primary text-on-primary hover:opacity-90 transition-opacity rounded-full px-8 py-4 font-label-md text-label-md shadow-xl"
+                  href="#"
+                  >اعرف أكتر عن برايت واي<span
+                    class="material-symbols-outlined rtl:rotate-180"
+                    >arrow_back</span
+                  ></a
+                >
+              </div>
+              <div class="order-1 lg:order-2">
+                <div
+                  class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white h-64 md:h-[450px]"
+                >
+                  <img
+                    alt="Bright Way Professional Team in Cairo"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AP1WRLsu-sVb60rhR9Wuxey3f1VCHXu6atngv4Hn1FLSvmH-7edEMcivB5a_KYsyZKcluiPBtQGo0yqsZDDvKmVACzZZYzluM2-1N3mIRF8xmKpBYlXsWcjIGcAAGwCMqAEPO60JoDSjFNDly5c07pAuYfz7JuzVYvbcrnDRqnxCCZ5FEbrutcBnKgCVHJsgDwpP-YLOksaQb9IjTPN5TIlAHq-ZWHqMxaL1qkjEw0JzLZyx43KSBFgZwbPkI4U"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners Carousel Section -->
+      <section
+        class="py-16 px-margin-mobile md:px-margin-desktop bg-surface overflow-hidden border-t border-outline-variant/20"
+      >
+        <div class="max-w-container-max mx-auto text-center mb-12">
+          <h2
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface whitespace-nowrap"
+          >
+            جمعنالك أفضل شركات التأمين
+          </h2>
+        </div>
+        <div class="relative w-full flex overflow-hidden">
+          <div
+            class="flex items-center justify-evenly gap-8 md:gap-16 px-4 animate-scroll-rtl min-w-[200%] w-max"
+          >
+            <img
+              alt="Allianz"
+              class="h-10 object-contain drop-shadow-md"
+              src="./Allianz.webp"
+            />
+            <img
+              alt="Chubb"
+              class="h-5 object-contain drop-shadow-md"
+              src="./chubb.webp"
+            />
+            <img
+              alt="MetLife"
+              class="h-10 object-contain drop-shadow-md"
+              src="./MetLife.webp"
+            />
+            <img
+              alt="Sarwa Insurance"
+              class="h-16 object-contain drop-shadow-md"
+              src="./Sarwa-Insurance.webp"
+            />
+            <img
+              alt="Allianz"
+              class="h-10 object-contain drop-shadow-md"
+              src="./Allianz.webp"
+            />
+            <img
+              alt="Chubb"
+              class="h-5 object-contain drop-shadow-md"
+              src="./chubb.webp"
+            />
+            <img
+              alt="MetLife"
+              class="h-10 object-contain drop-shadow-md"
+              src="./MetLife.webp"
+            />
+            <img
+              alt="Sarwa Insurance"
+              class="h-10 object-contain drop-shadow-md"
+              src="./Sarwa-Insurance.webp"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Articles Section -->
+      <section
+        class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low relative"
+      >
+        <div class="max-w-container-max mx-auto">
+          <div class="flex flex-row-reverse justify-between items-end mb-12">
+            <div class="text-right">
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface mb-2"
+              >
+                أكتشف المزيد
+              </h2>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                عن التأمين و أكثر
+              </h3>
+            </div>
+            <a
+              class="hidden sm:flex flex-row-reverse items-center gap-2 text-primary hover:opacity-80 font-label-md text-label-md"
+              href="#"
+            >
+              المزيد من المقالات
+              <span class="material-symbols-outlined rtl:rotate-180"
+                >arrow_back</span
+              >
+            </a>
+          </div>
+          <!-- Bento Grid for Articles -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Featured Article (Spans 2 cols) -->
+            <article
+              class="col-span-1 md:col-span-2 bg-surface-container-lowest overflow-hidden shadow-xl border-4 border-white hover:shadow-2xl transition-shadow flex flex-col group rounded-[2rem]"
+            >
+              <div class="h-64 md:h-80 overflow-hidden relative">
+                <div class="w-full h-full overflow-hidden">
+                  <img
+                    alt="Car Insurance"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida/AP1WRLtppknR-JdLz423fXBosfrKXRnu7eVn4dTK0CzSGuWawTvFHFiPOD5C2LrzrVzc1AM26c18cVT7l64YmlkvNuIrTORV6-aZ_FaJxtwBM5nE4Fc0mVRCN_dk3qpzo5G3qzuDvER4RvsWQKVmZOdw5EEr_h-x0KBqvzXTnQs2iaeXZD-76tt6i2pRoA3LTaRG15ALCxmRzT-yxeDgaEyjI3ImOSVM1lUQFVHBBMiWMmADRs4b44xIUJGfFn3f"
+                  />
+                </div>
+              </div>
+              <div class="p-8 flex-1 flex flex-col justify-between text-right">
+                <div>
+                  <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full mb-4 font-bold"
+                    >3 دقائق للقراءة</span
+                  >
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors"
+                  >
+                    <a class="" href="#">سبع أسباب للتأمين على سيارتك فى مصر</a>
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2"
+                  >
+                    اختيار تأمين سيارات - عربيتك عزيزة عليك و من غيرها بتتبهدل,
+                    فعشان كدة بتهتم بيها جداً و بتحافظ عليها و خوفك على عربيتك
+                    بيخليها مصدر قلق ليك
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- Article 2 -->
+            <article
+              class="bg-surface-container-lowest overflow-hidden shadow-xl border-4 border-white hover:shadow-2xl transition-shadow flex flex-col group rounded-[2rem]"
+            >
+              <div class="h-48 overflow-hidden relative bg-surface-container">
+                <img
+                  alt="Car Insurance Illustration"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida/AP1WRLtppknR-JdLz423fXBosfrKXRnu7eVn4dTK0CzSGuWawTvFHFiPOD5C2LrzrVzc1AM26c18cVT7l64YmlkvNuIrTORV6-aZ_FaJxtwBM5nE4Fc0mVRCN_dk3qpzo5G3qzuDvER4RvsWQKVmZOdw5EEr_h-x0KBqvzXTnQs2iaeXZD-76tt6i2pRoA3LTaRG15ALCxmRzT-yxeDgaEyjI3ImOSVM1lUQFVHBBMiWMmADRs4b44xIUJGfFn3f"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between text-right">
+                <div>
+                  <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full mb-4 font-bold"
+                    >3 دقائق للقراءة</span
+                  >
+                  <h3
+                    class="font-headline-md text-body-lg font-bold text-on-surface mb-3 group-hover:text-primary transition-colors"
+                  >
+                    <a class="" href="#"
+                      >٤ حاجات لازم تعرفهم قبل ماتشتري تأمين لعربيتك في مصر</a
+                    >
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 hidden sm:block"
+                  >
+                    معلومات لازم تعرفها و أنت بتشتري تأمين السيارات الشامل و أنت
+                    بتشتري تأمين العربية لازم تبقي عارف كويس البوليصة الي أنت
+                    شاريها بتغطيك إزاي و شروطها ايه
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- Article 3 -->
+            <article
+              class="bg-surface-container-lowest overflow-hidden shadow-xl border-4 border-white hover:shadow-2xl transition-shadow flex flex-col group rounded-[2rem]"
+            >
+              <div class="h-48 overflow-hidden relative">
+                <div class="w-full h-full overflow-hidden">
+                  <img
+                    alt="Medical Insurance"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida/AP1WRLs50SrYe5zfCijj-n_oDpYLm9KgeO_QGdXuwwsK92n2UH2B5aBCgi-Gl7O_daG04rTt8rTx49MypVTWOXXazbduTEuUBt0qAbnesopyDkA0L3RZBEFkgWgzCuKiRHwBTJ2TjWHdALOcOWYtPf0vx6m4IPOc5T_1hr-NHy0yE9VdNOShOdwE5zaiW0lopHxqrbJ1boxovq2ZKazb_7hIdM8LhiAvPSvcTOPtOovy6oMllb9n5t6tXwnMJcWs"
+                  />
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between text-right">
+                <div>
+                  <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full mb-4 font-bold"
+                    >2 دقائق للقراءة</span
+                  >
+                  <h3
+                    class="font-headline-md text-body-lg font-bold text-on-surface mb-3 group-hover:text-primary transition-colors"
+                  >
+                    <a class="" href="#">التأمين الطبي: ليه مهم لشركتك؟</a>
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 hidden sm:block"
+                  >
+                    التأمين الطبي هو أحد أشهر المزايا اللي المؤسسات المختلفة
+                    بتقدمها للعاملين بها, و بيتم تغطية الموظف ضد أي نفقات طبية
+                    يتعرض لها خلال السنة
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- Article 4 -->
+            <article
+              class="bg-surface-container-lowest overflow-hidden shadow-xl border-4 border-white hover:shadow-2xl transition-shadow flex flex-col group md:col-span-2 lg:col-span-1 rounded-[2rem]"
+            >
+              <div class="h-48 overflow-hidden relative">
+                <img
+                  alt="Professional working from home"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida/AP1WRLtGBf0EeTLMRH6IQPOMbbzdajAmeKJB-21RlECUkXyaN3mjMGT3Ra2F5TE-lMt3U2tROUWjdvwJnr3KIQHVMDvoBsd82JOiEwaTWXRfIT_LvzBPUysAisA5yyZQvE7yQZ3dcR_miiv2zYBKuE3l0o6SI2evutmo-30F7NZ2d26Cjze1KA2Hb3yPzeBijs5VIMdSuk2kfSTyy48V022OGWcLM8xo8YnFqJeV4Vbt8YKE-x6X9tWkVKotwVAd"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between text-right">
+                <div>
+                  <span
+                    class="inline-block px-4 py-2 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full mb-4 font-bold"
+                    >3 دقائق للقراءة</span
+                  >
+                  <h3
+                    class="font-headline-md text-body-lg font-bold text-on-surface mb-3 group-hover:text-primary transition-colors"
+                  >
+                    <a class="" href="#"
+                      >٥ نصائح هتساعدك علي العمل من البيت بطريقة أفضل</a
+                    >
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant line-clamp-2 hidden sm:block"
+                  >
+                    العمل من البيت ليه مميزات عديدة زي المرونة و الراحة و توفير
+                    الوقت أللي بيضيع في الطريق ما بين البيت و الشغل. لكن في نفس
+                    الوقت بيمثل تحدي لتطبيقه
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="mt-8 text-center sm:hidden">
+            <a
+              class="inline-flex flex-row-reverse items-center justify-center gap-2 text-primary font-label-md text-label-md px-6 py-3 border border-primary rounded-full w-full"
+              href="#"
+            >
+              المزيد من المقالات
+              <span class="material-symbols-outlined rtl:rotate-180"
+                >arrow_back</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section
+        class="py-32 px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-secondary-container/5 to-primary/5 -z-10"
+        ></div>
+        <div
+          class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10"
+        >
+          <div class="text-center mb-12">
+            <div class="inline-block mb-4 relative">
+              <h2
+                class="font-display text-headline-lg-mobile md:text-display text-on-surface"
+              >
+                ماذا يقول عملاؤنا
+              </h2>
+              <svg
+                class="absolute -bottom-2 left-0 w-full h-2 text-secondary-container"
+                preserveaspectratio="none"
+                viewbox="0 0 100 10"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="4"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="flex items-center justify-center gap-1.5 mt-6 bg-white/80 backdrop-blur w-fit mx-auto px-6 py-2 rounded-full shadow-sm border border-secondary-container/20"
+            >
+              <div class="flex text-secondary-container">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                ><span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <span class="font-display text-headline-md text-secondary mr-2"
+                >4.9/5</span
+              >
+            </div>
+          </div>
+          <div class="max-w-3xl mx-auto flex flex-col items-center gap-8">
+            <div class="flex justify-center gap-6 mb-4">
+              <button
+                class="review-avatar-btn group relative"
+                data-index="0"
+                onclick="updateReview(0)"
+              >
+                <div
+                  class="w-20 h-20 rounded-2xl overflow-hidden border-4 border-white shadow-lg transition-all duration-300 group-[.active]:border-primary group-[.active]:scale-110"
+                >
+                  <img
+                    alt="Wael Ahmed"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AP1WRLvFqsU6INQwuMKOAL7uFFUcTFp-IKt_fXwgaDXCK-16pJXdwUW9dT2kxA-nLDFIO2Kb0YbnYWHtSSdI2eYNGPuoa1nYjaOFVUylq22ws1FvjpC8xYy2ACu2HGN7dXpWVPz697IkR-yfk5hJMp0K_kL8SwfPvDzUPrluSs9FFgmMClAHr8n896ATicXaDrYRCc29SMewi1wRpi4pUgoAOc0OdPQEo-5Hs2MmXcFZa21Oskhh2jueSxfQuTQ"
+                  />
+                </div></button
+              ><button
+                class="review-avatar-btn group relative"
+                data-index="1"
+                onclick="updateReview(1)"
+              >
+                <div
+                  class="w-20 h-20 rounded-2xl overflow-hidden border-4 border-white shadow-lg transition-all duration-300 group-[.active]:border-primary group-[.active]:scale-110"
+                >
+                  <img
+                    alt="Sara Mahmoud"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXdSrHg8fLCC5n-p1pj5xf5BQINaHYkbWA10mBh-7MlN0zZOAuqH0dWNaEiG2GfNKsf3DRMhPveVDwPd7HHcXRWIgIfe00UtKwjq9X1438xSZhWhBfiTAywEw-NpdjtLbYYix0aJCKDoUk9Wt67nuIZmwFcDnMcL5Hn8rbqmtM-cx_koXO1hPZ3pCio0t4XrITo3LeX2jtKMIQkQRL7epnq9bwqp00PG4wSWvxGujNiesMmN5kSPKFFgefijrjKkbwmdh1PweQt4bX"
+                  />
+                </div></button
+              ><button
+                class="review-avatar-btn group relative"
+                data-index="2"
+                onclick="updateReview(2)"
+              >
+                <div
+                  class="w-20 h-20 rounded-2xl overflow-hidden border-4 border-white shadow-lg transition-all duration-300 group-[.active]:border-primary group-[.active]:scale-110"
+                >
+                  <img
+                    alt="Khaled Ali"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmInSE9PzL7EXZ6NJ2PSOUAyTOLQ-rZIcMVaxE0BVVsCRd2WJY_9BGBfgE9XtbdO9EwA2rrTIXj9R6x0VlQJvA15Je7iod7HkZw5UYAjg-ZFnOKT745zkvZ2XwGjiwkKpfssE5bFUda_trnocynYqQ-SjVf_Tf5kxXU4Mo8bhRY7UQVP48BXWBkk-whqRf4Vzqz5dg3DoevSGUeX6ApRBG4GYWbIRsj1d1mcBaW2omnPLSCVJ0n8qpHJQuTuGVLKD_bSmVyDGFGQH2"
+                  />
+                </div>
+              </button>
+            </div>
+            <div
+              class="w-full bg-surface-container-lowest rounded-[2.5rem] p-8 md:p-12 shadow-2xl border-t-8 border-secondary-container relative overflow-hidden min-h-[400px] flex flex-col justify-center"
+            >
+              <div class="absolute top-8 right-8 text-primary/10">
+                <span
+                  class="material-symbols-outlined text-8xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >format_quote</span
+                >
+              </div>
+              <div class="flex flex-col items-center text-center relative z-10">
+                <p
+                  class="font-display text-body-lg md:text-2xl text-on-surface mb-10 leading-relaxed italic font-medium transition-opacity duration-300"
+                  id="review-text"
+                >
+                  "شركة ممتازة، إجراءات بسيطة وسهلة جداً. لم أحتاج حتى للذهاب
+                  لمقر الشركة، تجربة رقمية متكاملة ومريحة. شكراً لفريق برايت واي
+                  على الاحترافية."
+                </p>
+                <div class="flex flex-col items-center gap-1">
+                  <h4
+                    class="font-display text-headline-md text-primary font-extrabold transition-opacity duration-300"
+                    id="review-name"
+                  >
+                    وائل أحمد
+                  </h4>
+                  <div class="flex items-center gap-2 text-on-surface-variant">
+                    <span class="w-8 h-px bg-outline-variant"></span>
+                    <p
+                      class="font-label-md text-label-md transition-opacity duration-300"
+                      id="review-role"
+                    >
+                      عميل لدى برايت واي منذ ٢٠٢٣
+                    </p>
+                    <span class="w-8 h-px bg-outline-variant"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const reviews = [
+            {
+              text: '"شركة ممتازة، إجراءات بسيطة وسهلة جداً. لم أحتاج حتى للذهاب لمقر الشركة، تجربة رقمية متكاملة ومريحة. شكراً لفريق برايت واي على الاحترافية."',
+              name: "وائل أحمد",
+              role: "عميل لدى برايت واي منذ ٢٠٢٣",
+            },
+            {
+              text: '"انبهرت جداً بمدى سهولة مقارنة الأسعار واختيار أفضل عرض لتأمين عربيتي. خدمة العملاء كانت متعاونة جداً وسريعة في الرد على كل استفساراتي."',
+              name: "سارة محمود",
+              role: "عميلة لدى برايت واي منذ ٢٠٢٤",
+            },
+            {
+              text: '"برايت واي وفرت عليا وقت ومجهود كبير في تأمين الموظفين عندي في الشركة. المنصة سهلة الاستخدام والأسعار فعلاً منافسة جداً مقارنة بالسوق."',
+              name: "خالد علي",
+              role: "صاحب شركة تجارية",
+            },
+          ];
+          function updateReview(index) {
+            const textEl = document.getElementById("review-text");
+            const nameEl = document.getElementById("review-name");
+            const roleEl = document.getElementById("review-role");
+            const btns = document.querySelectorAll(".review-avatar-btn");
+            textEl.style.opacity = 0;
+            nameEl.style.opacity = 0;
+            roleEl.style.opacity = 0;
+            setTimeout(() => {
+              textEl.innerText = reviews[index].text;
+              nameEl.innerText = reviews[index].name;
+              roleEl.innerText = reviews[index].role;
+              textEl.style.opacity = 1;
+              nameEl.style.opacity = 1;
+              roleEl.style.opacity = 1;
+            }, 300);
+            btns.forEach((btn, i) => {
+              if (i === index) btn.classList.add("active");
+              else btn.classList.remove("active");
+            });
+          }
+          updateReview(0);
+        </script>
+      </section>
+      <!-- Mobile App Promotion Section -->
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container dark:bg-surface-container w-full mt-auto pt-16 pb-8 border-t border-outline-variant/30"
+    >
+      <div
+        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 border-b border-outline-variant/30 pb-12"
+        >
+          <!-- Brand Column -->
+          <div class="lg:col-span-2 text-right">
+            <a
+              class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-2 flex-row-reverse mb-4 w-fit ml-auto"
+              href="#"
+            >
+              <!-- <span
+                class="material-symbols-outlined text-secondary-container"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >security</span
+              >
+              Bright Way -->
+              <img
+                alt=""
+                src="./logo-Header.webp"
+                width="500"
+                height="124"
+                class="h-10 w-auto md:h-11 bg-red"
+                style="
+                  filter: brightness(0) saturate() invert(19%) sepia(42%)
+                    saturate(1200%) hue-rotate(186deg) brightness(95%)
+                    contrast(92%);
+                "
+              />
+            </a>
+            <p
+              class="text-on-surface-variant font-body-md text-body-md mb-6 max-w-sm ml-auto"
+            >
+              أول منصة لتأمين السيارات والطبي في مصر. قارن واختار وثيقتك في
+              دقايق بأفضل الأسعار وبكل ثقة.
+            </p>
+          </div>
+          <!-- Links: Products -->
+          <div class="text-right">
+            <h4
+              class="font-headline-md text-body-lg font-bold text-on-surface mb-4"
+            >
+              منتجات التأمين
+            </h4>
+            <ul class="space-y-3">
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >التأمين الطبي</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >تأمين السيارات</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links: Company -->
+          <div class="text-right">
+            <h4
+              class="font-headline-md text-body-lg font-bold text-on-surface mb-4"
+            >
+              الشركة
+            </h4>
+            <ul class="space-y-3">
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >عن برايت واي</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >الأخبار والمقالات</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >الوظائف</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Links: Support -->
+          <div class="text-right">
+            <h4
+              class="font-headline-md text-body-lg font-bold text-on-surface mb-4"
+            >
+              الدعم والمساعدة
+            </h4>
+            <ul class="space-y-3">
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >إتصل بنا</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >الأسئلة الشائعة</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >الشروط والأحكام</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+                  href="#"
+                  >سياسة الخصوصية</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div
+          class="flex flex-col md:flex-row-reverse justify-between items-center gap-6"
+        >
+          <div
+            class="text-on-surface-variant dark:text-on-surface-variant font-body-md text-body-md text-center md:text-right flex-1"
+          >
+            جميع الحقوق محفوظة لشركة برايت واي © 2024. مرخصة وخاضعة لإشراف
+            الهيئة العامة للرقابة المالية.
+          </div>
+          <!-- Social Icons -->
+          <div class="flex flex-row-reverse items-center gap-4">
+            <a
+              class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary hover:border-primary transition-all shadow-sm"
+              href="#"
+            >
+              <span class="material-symbols-outlined" style="font-size: 24px"
+                >share</span
+              >
+            </a>
+            <a
+              class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary hover:border-primary transition-all shadow-sm"
+              href="#"
+            >
+              <span class="material-symbols-outlined" style="font-size: 24px"
+                >thumb_up</span
+              >
+            </a>
+            <a
+              class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary hover:border-primary transition-all shadow-sm"
+              href="#"
+            >
+              <span class="material-symbols-outlined" style="font-size: 24px"
+                >smart_display</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
